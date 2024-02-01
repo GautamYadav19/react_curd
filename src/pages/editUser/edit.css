@@ -1,0 +1,7 @@
+.myclass{
+    width: 350px !important;
+}
+.myclass label,input {
+    width: 350px !important;
+
+}

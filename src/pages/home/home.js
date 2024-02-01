@@ -1,6 +1,10 @@
 import React from "react";
 import Navbar from "../../components/navbar/navbar";
+import { useNavigate } from "react-router-dom";
+
 const Home =()=>{
+  const navigator = useNavigate();
+
 return (
     <div>
 <Navbar/>
@@ -11,8 +15,9 @@ return (
   <div className="col-lg-6 mx-auto">
     <p className="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
     <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-      <button type="button" className="btn btn-primary btn-lg px-4 gap-3"><a href="/list"></a> Primary button</button>
-      <button type="button" className="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+      <button type="button" className="btn btn-primary btn-lg px-4 gap-3" onClick={()=>{
+navigator('/list')
+      }}>List Of Users</button>
     </div>
   </div>
 </div>

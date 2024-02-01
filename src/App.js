@@ -17,6 +17,7 @@ function App() {
     <Route path='/list'element={<List/>} />
     <Route path='/createuser'element={<CreateUser/>} />
     <Route path='/edit/:id' element={<Editform/>}></Route>
+    {/* <Route path='/delete/:id' element={</>}/> */}
 
 
   </Routes>
